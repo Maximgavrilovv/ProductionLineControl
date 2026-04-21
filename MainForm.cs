@@ -21,6 +21,7 @@ namespace ProductionLineControl
 
             _bindingSource.DataSource = _motorService.GetAll();
             dgvMotors.DataSource = _bindingSource;
+            dgvMotors.AllowUserToAddRows = false;
         }
 
         private void RefreshGrid()

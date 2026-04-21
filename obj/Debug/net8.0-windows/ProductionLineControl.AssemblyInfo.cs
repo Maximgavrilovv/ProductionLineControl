@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProductionLineControl")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dec78f6966a7f1faea752a69dab329b575af848c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1ca9f6c87b5b3859bddff162801f89e62ffe66f9")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProductionLineControl")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProductionLineControl")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

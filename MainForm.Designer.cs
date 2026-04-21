@@ -38,7 +38,9 @@ namespace ProductionLineControl
             btnLoadRecipe = new Button();
             btnSaveRecipe = new Button();
             timer1 = new System.Windows.Forms.Timer(components);
+            panel1 = new Panel();
             ((System.ComponentModel.ISupportInitialize)dgvMotors).BeginInit();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // dgvMotors
@@ -53,7 +55,7 @@ namespace ProductionLineControl
             // 
             // btnAdd
             // 
-            btnAdd.Location = new Point(83, 262);
+            btnAdd.Location = new Point(23, 15);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(112, 29);
             btnAdd.TabIndex = 1;
@@ -63,7 +65,7 @@ namespace ProductionLineControl
             // 
             // btnEdit
             // 
-            btnEdit.Location = new Point(217, 262);
+            btnEdit.Location = new Point(157, 15);
             btnEdit.Name = "btnEdit";
             btnEdit.Size = new Size(112, 29);
             btnEdit.TabIndex = 2;
@@ -73,7 +75,7 @@ namespace ProductionLineControl
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(352, 262);
+            btnDelete.Location = new Point(292, 15);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(112, 29);
             btnDelete.TabIndex = 3;
@@ -83,7 +85,7 @@ namespace ProductionLineControl
             // 
             // btnLoadRecipe
             // 
-            btnLoadRecipe.Location = new Point(511, 262);
+            btnLoadRecipe.Location = new Point(451, 15);
             btnLoadRecipe.Name = "btnLoadRecipe";
             btnLoadRecipe.Size = new Size(112, 29);
             btnLoadRecipe.TabIndex = 4;
@@ -93,7 +95,7 @@ namespace ProductionLineControl
             // 
             // btnSaveRecipe
             // 
-            btnSaveRecipe.Location = new Point(653, 262);
+            btnSaveRecipe.Location = new Point(593, 15);
             btnSaveRecipe.Name = "btnSaveRecipe";
             btnSaveRecipe.Size = new Size(112, 29);
             btnSaveRecipe.TabIndex = 5;
@@ -107,21 +109,30 @@ namespace ProductionLineControl
             timer1.Interval = 1000;
             timer1.Tick += timer1_Tick;
             // 
+            // panel1
+            // 
+            panel1.Controls.Add(btnAdd);
+            panel1.Controls.Add(btnSaveRecipe);
+            panel1.Controls.Add(btnEdit);
+            panel1.Controls.Add(btnLoadRecipe);
+            panel1.Controls.Add(btnDelete);
+            panel1.Location = new Point(48, 383);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(717, 55);
+            panel1.TabIndex = 6;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(btnSaveRecipe);
-            Controls.Add(btnLoadRecipe);
-            Controls.Add(btnDelete);
-            Controls.Add(btnEdit);
-            Controls.Add(btnAdd);
+            Controls.Add(panel1);
             Controls.Add(dgvMotors);
             Name = "MainForm";
             Text = "Form1";
             Load += MainForm_Load;
             ((System.ComponentModel.ISupportInitialize)dgvMotors).EndInit();
+            panel1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -134,5 +145,6 @@ namespace ProductionLineControl
         private Button btnLoadRecipe;
         private Button btnSaveRecipe;
         private System.Windows.Forms.Timer timer1;
+        private Panel panel1;
     }
 }
