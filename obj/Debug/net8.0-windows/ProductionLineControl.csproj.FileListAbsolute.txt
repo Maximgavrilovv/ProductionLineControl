@@ -1,0 +1,17 @@
+C:\Users\Gosty\source\repos\ProductionLineControl\ProductionLineControl\bin\Debug\net8.0-windows\ProductionLineControl.exe
+C:\Users\Gosty\source\repos\ProductionLineControl\ProductionLineControl\bin\Debug\net8.0-windows\ProductionLineControl.deps.json
+C:\Users\Gosty\source\repos\ProductionLineControl\ProductionLineControl\bin\Debug\net8.0-windows\ProductionLineControl.runtimeconfig.json
+C:\Users\Gosty\source\repos\ProductionLineControl\ProductionLineControl\bin\Debug\net8.0-windows\ProductionLineControl.dll
+C:\Users\Gosty\source\repos\ProductionLineControl\ProductionLineControl\bin\Debug\net8.0-windows\ProductionLineControl.pdb
+C:\Users\Gosty\source\repos\ProductionLineControl\ProductionLineControl\obj\Debug\net8.0-windows\ProductionLineControl.MainForm.resources
+C:\Users\Gosty\source\repos\ProductionLineControl\ProductionLineControl\obj\Debug\net8.0-windows\ProductionLineControl.csproj.GenerateResource.cache
+C:\Users\Gosty\source\repos\ProductionLineControl\ProductionLineControl\obj\Debug\net8.0-windows\ProductionLineControl.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gosty\source\repos\ProductionLineControl\ProductionLineControl\obj\Debug\net8.0-windows\ProductionLineControl.AssemblyInfoInputs.cache
+C:\Users\Gosty\source\repos\ProductionLineControl\ProductionLineControl\obj\Debug\net8.0-windows\ProductionLineControl.AssemblyInfo.cs
+C:\Users\Gosty\source\repos\ProductionLineControl\ProductionLineControl\obj\Debug\net8.0-windows\ProductionLineControl.csproj.CoreCompileInputs.cache
+C:\Users\Gosty\source\repos\ProductionLineControl\ProductionLineControl\obj\Debug\net8.0-windows\ProductionLineControl.dll
+C:\Users\Gosty\source\repos\ProductionLineControl\ProductionLineControl\obj\Debug\net8.0-windows\refint\ProductionLineControl.dll
+C:\Users\Gosty\source\repos\ProductionLineControl\ProductionLineControl\obj\Debug\net8.0-windows\ProductionLineControl.pdb
+C:\Users\Gosty\source\repos\ProductionLineControl\ProductionLineControl\obj\Debug\net8.0-windows\ProductionLineControl.genruntimeconfig.cache
+C:\Users\Gosty\source\repos\ProductionLineControl\ProductionLineControl\obj\Debug\net8.0-windows\ref\ProductionLineControl.dll
+C:\Users\Gosty\source\repos\ProductionLineControl\ProductionLineControl\obj\Debug\net8.0-windows\ProductionLineControl.Forms.MotorEditForm.resources
