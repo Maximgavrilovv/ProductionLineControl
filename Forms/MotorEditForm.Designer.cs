@@ -44,6 +44,11 @@
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
+            label6 = new Label();
+            label7 = new Label();
+            label8 = new Label();
+            label9 = new Label();
+            label10 = new Label();
             ((System.ComponentModel.ISupportInitialize)numTargetSpeed).BeginInit();
             SuspendLayout();
             // 
@@ -179,11 +184,61 @@
             label5.TabIndex = 15;
             label5.Text = "Baud rate";
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(53, 8);
+            label6.Name = "label6";
+            label6.Size = new Size(65, 20);
+            label6.TabIndex = 16;
+            label6.Text = "Protocol";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(226, 8);
+            label7.Name = "label7";
+            label7.Size = new Size(119, 20);
+            label7.TabIndex = 17;
+            label7.Text = "Connection Type";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(395, 8);
+            label8.Name = "label8";
+            label8.Size = new Size(97, 20);
+            label8.TabIndex = 18;
+            label8.Text = "Manufacturer";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(575, 9);
+            label9.Name = "label9";
+            label9.Size = new Size(52, 20);
+            label9.TabIndex = 19;
+            label9.Text = "Model";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(574, 91);
+            label10.Name = "label10";
+            label10.Size = new Size(51, 20);
+            label10.TabIndex = 20;
+            label10.Text = "Speed";
+            // 
             // MotorEditForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label10);
+            Controls.Add(label9);
+            Controls.Add(label8);
+            Controls.Add(label7);
+            Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -225,5 +280,10 @@
         private Label label3;
         private Label label4;
         private Label label5;
+        private Label label6;
+        private Label label7;
+        private Label label8;
+        private Label label9;
+        private Label label10;
     }
 }
