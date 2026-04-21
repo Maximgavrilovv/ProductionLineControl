@@ -33,9 +33,13 @@ namespace ProductionLineControl.Services
 
         public void Disconnect(Motor motor)
         {
-            var connection = _connections[motor.Id];
-            connection.Disconnect();
-            _connections.Remove(motor.Id);
+            _connections.TryGetValue(motor.Id, out var conn);
+
+            if (conn != null)
+            {
+                conn.Disconnect();
+                _connections.Remove(motor.Id);
+            }
         }
     }
 }
