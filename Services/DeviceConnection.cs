@@ -7,21 +7,22 @@ using System.Threading.Tasks;
 
 namespace ProductionLineControl.Services
 {
-    public class DeviceConnectionMock : IDeviceConnection
+    public class DeviceConnection : IDeviceConnection
     {
+        public Guid Id { get; set; }
         public void Connect()
         {
-            // TODO: Implement connection
+            // TODO
         }
 
         public void Disconnect()
         {
-
+            // TODO
         }
 
         public void SendSpeed(double value)
         {
-            // TODO: Send to device
+            // TODO
         }
     }
 }

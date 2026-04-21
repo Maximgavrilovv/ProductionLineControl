@@ -12,11 +12,4 @@ namespace ProductionLineControl.Models
 
         public List<Motor> Motors { get; set; } = new();
     }
-
-    public class SpeedEntry
-    {
-        public string MotorName { get; set; }
-        public string Model { get; set; }
-        public double Speed { get; set; }
-    }
 }

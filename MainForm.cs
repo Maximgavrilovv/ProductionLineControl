@@ -11,9 +11,13 @@ namespace ProductionLineControl
 
         private BindingSource _bindingSource = new();
 
+        private readonly ConnectionManager _connectionManager = new();
+
         public MainForm()
         {
             InitializeComponent();
+
+            this.Size = new Size(1600, 800);
 
             _bindingSource.DataSource = _motorService.GetAll();
             dgvMotors.DataSource = _bindingSource;
@@ -36,6 +40,7 @@ namespace ProductionLineControl
             if (form.ShowDialog() == DialogResult.OK)
             {
                 _motorService.Add(form.Motor);
+                _connectionManager.CreateConnection(form.Motor);
                 RefreshGrid();
             }
         }
@@ -60,6 +65,7 @@ namespace ProductionLineControl
                 return;
 
             _motorService.Delete(motor.Id);
+            _connectionManager.Disconnect(motor);
             RefreshGrid();
         }
 

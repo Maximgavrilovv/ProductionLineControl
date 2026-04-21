@@ -17,25 +17,23 @@ namespace ProductionLineControl.Services
 
         public void Save(string path, SpeedRecipe recipe)
         {
-            // Гарантируем расширение .json
             path = Path.ChangeExtension(path, ".json");
 
             var json = JsonSerializer.Serialize(recipe, _options);
 
-            // Явная перезапись — файл всегда создаётся заново
             File.WriteAllText(path, json, Encoding.UTF8);
         }
 
         public SpeedRecipe Load(string path)
         {
             if (!File.Exists(path))
-                throw new FileNotFoundException("Файл рецепта не найден.", path);
+                throw new FileNotFoundException("Recipe not found", path);
 
             var json = File.ReadAllText(path, Encoding.UTF8)
-                           .Trim(); // убираем BOM / пробелы по краям
+                           .Trim();
 
             return JsonSerializer.Deserialize<SpeedRecipe>(json, _options)
-                   ?? throw new InvalidDataException("Файл пуст или не является рецептом.");
+                   ?? throw new InvalidDataException("Invalid file.");
         }
     }
 }
